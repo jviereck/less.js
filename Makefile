@@ -24,7 +24,8 @@ less:
 	@@mkdir -p dist
 	@@touch ${DIST}
 	@@cat ${HEADER} | sed s/@VERSION/${VERSION}/ > ${DIST}
-	@@cat build/ecma-5.js\
+	@@cat build/dist.js\
+	      build/ecma-5.js\
 	      ${SRC}/parser.js\
 	      ${SRC}/functions.js\
 	      ${SRC}/tree/*.js\
